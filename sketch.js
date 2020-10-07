@@ -18,8 +18,11 @@ function draw(){
     background("white");
     if (keyWentDown (UP_ARROW)){
         writestock(foods);
-        dog.addImage(happy);
+        if (foods>0){
+            dog.addImage(happy);
 
+        }
+      
     }
     stroke ("black");
     text("food remaining :" + foods,170,100);
@@ -35,7 +38,7 @@ function writestock(food){
     }else {
         food-= 1;
     }
-    db.ref('food').set({
+    db.ref('/').set({
         
         food: food
     })
