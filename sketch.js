@@ -1,7 +1,7 @@
 var dog,db;
 var hungry,happy,foodstock, foods;
 function preload(){
-    hungry = loadImage("dog.png");
+    hungry = loadImage("Dog.png");
     happy = loadImage("happy dog.png")
 }
 function setup(){
